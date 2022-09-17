@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<meta charset="UTP-8">
+
+<head>
+    <title>Lab4-parte2</title>
+    <style>
+li{list-style-position: none;}
+h3{
+      color: rgb(95, 95, 95);
+    }
+ .La{
+      color: rgb(231, 164, 38);
+    }
+
+    .Lc {
+      color: royalblue;
+    }
+    </style>
+    <h3>formulario</h3>
+    <form action="" id="formulario" method="post">
+    <div> 
+     <ul>
+         <li>email</li>
+     </ul>
+     <input id= "email" class="form-control" type="email" placeholder="Escribe tu Email...">
+     <ul> 
+      <li>password</li>
+     </ul>
+     <input id= "password" class="form-control" type="password" placeholder="Escribe tu password...">
+     
+    </div>
+
+    <div>
+      <button type="submit">submit</button>
+    </div>
+
+    </form>
+
+    <script>
+      var formulario = document.getElementById('formulario');
+      formulario.addEventListener('submit',(e) =>
+      {
+        e.preventDefault()
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        console.log("email: " + email + "  password: " + password);
+      }  )
+    </script>
+
+</head>
+
+</body>
+
+</html>
